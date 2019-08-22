@@ -67,6 +67,9 @@ shinyUI(fluidPage(
              p("Site is characterized by a mix atmosphere of Joy, Panic, and Disbelieve. Significant concerns exist over the ability 
                 of the site to maintain increased population levels. Declaration of superfund status may be necessary to ensure healthy 
                 population development... or researcher could pick up instead of completing overly-complex analysis"),
-             actionButton("show", "Additional Data"))
+             actionButton("show", "Additional Data"), 
+             p(""),
+             a("Github Repository:", href= 'https://github.com/ByronAnalytics/DataScientistBirthAnnouncement/wiki/Population-Model-as-a-Birth-Announcement'),
+             target = '_blank')
     )
 ))

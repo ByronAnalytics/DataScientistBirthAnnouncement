@@ -5,8 +5,8 @@ account: byronanalytics
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 228681
-bundleId: 1042567
+bundleId: 2344698
 url: https://byronanalytics.shinyapps.io/PopulationModel/
-when: 1508860104.58239
+when: 1566473505.60792
 asMultiple: FALSE
 asStatic: FALSE
