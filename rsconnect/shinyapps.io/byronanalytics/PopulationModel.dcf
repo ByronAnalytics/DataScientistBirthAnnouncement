@@ -1,0 +1,12 @@
+name: PopulationModel
+title: PopulationModel
+username:
+account: byronanalytics
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 228681
+bundleId: 1042567
+url: https://byronanalytics.shinyapps.io/PopulationModel/
+when: 1508860104.58239
+asMultiple: FALSE
+asStatic: FALSE
