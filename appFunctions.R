@@ -4,7 +4,7 @@
 calcRich <- function(plotData){
   rich <- rep(2, times=length(plotData$Date))
   plot(rich~Date, data=plotData, type="l", ylim=c(0,5), ylab = "Species Richness",
-       main = "Projected Species Richness Over Next 6 Months")
+       xlab = "Date", main = "Projected Species Richness Over Next 6 Months")
 }
 
 
@@ -17,7 +17,7 @@ calcSimp <- function(plotData){
  # simErr <- 1/((HumError/totAbun)^2 + (plotData$Cats/totAbun)^2)
   
   plot(simInd~plotData$Date, type="l", ylim = c(1.5,2.5), ylab = "Simpson's Diversity",
-       main = "Projected Site Diversity Over Next 6 Months")  
+       xlab = "Date", main = "Projected Site Diversity Over Next 6 Months")  
 #  points(simInd~plotData$Date, type="l")
 }
 
@@ -30,7 +30,7 @@ calcShan <- function(plotData){
  # shanErr <- ((HumError/totAbun)*log((HumError/totAbun)) + (plotData$Cats/totAbun)*log((plotData$Cats/totAbun)))*-1
   
   plot(shanInd~plotData$Date, type="l", ylim = c(0.5,1), ylab = "Shannon Diversity",
-       main = "Projected Site Diversity Over Next 6 Months")  
+       xlab = "Date", main = "Projected Site Diversity Over Next 6 Months")  
   #points(shanInd~plotData$Date, type="l")
   
 }

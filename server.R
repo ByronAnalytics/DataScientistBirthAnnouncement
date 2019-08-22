@@ -1,9 +1,4 @@
-
-# This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
-#
-# http://shiny.rstudio.com
-#
+# Server Logic
 library(shiny)
 if(!require("mapview")) install.packages("mapview"); library(mapview);
 source("appFunctions.R")
@@ -15,6 +10,7 @@ shinyServer(function(input, output) {
 
   output$DivPlot <- renderPlot({
     
+    # Plots for Diversity Tab
     plotOut <- switch(input$divSelected,
                       Richness = calcRich,
                       Simpsons = calcSimp,
@@ -26,6 +22,7 @@ shinyServer(function(input, output) {
   output$AbunPlot <- renderPlot({
 
     
+    # Plots for Abundance Tabs
     plotOut2 <- switch(input$abundSelected,
                       Total = calctotal,
                       Species = calcSpecies,
