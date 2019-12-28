@@ -34,8 +34,7 @@ shinyServer(function(input, output) {
   observeEvent(input$show, {
     showModal(modalDialog(
       title = "Photo Documentation",
-      img(src ="images/Happy.JPG", width = 400, align = "middle"),
-      img(src ="images/BabyByron.jpg", width = 400, align = "middle"),
+        img(src ="images/BabyByron.jpg", width = 400, align = "middle"),
       easyClose = TRUE,
       footer = NULL
     ))
