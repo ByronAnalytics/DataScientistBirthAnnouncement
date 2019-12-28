@@ -32,11 +32,14 @@ shinyServer(function(input, output) {
   })
   
   observeEvent(input$show, {
-    showModal(modalDialog(
+    showModal(
+      modalDialog(
+        div(
+          img(src ="images/BabyByron.jpg", width = 400), 
+          style="text-align: center;"),
       title = "Photo Documentation",
-        img(src ="images/BabyByron.jpg", width = 400, align = "middle"),
       easyClose = TRUE,
-      footer = NULL
+      footer = modalButton("Dismiss")
     ))
   })
 
