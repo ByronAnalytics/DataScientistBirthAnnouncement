@@ -5,8 +5,9 @@ account: byronanalytics
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 228681
-bundleId: 2344749
+bundleId: 2695050
 url: https://byronanalytics.shinyapps.io/PopulationModel/
-when: 1566474561.76886
+when: 1577494556.53213
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: .Rhistory (DESKTOP-667V11Q's conflicted copy 2019-12-27)
